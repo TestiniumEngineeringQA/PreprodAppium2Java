@@ -35,7 +35,7 @@ public abstract class BaseTest {
     @BeforeAll
     public static void setup() {
         try {
-            hubUrl = new URL("https://dev-devicepark-appium-gw-service.testinium.io/wd/hub");
+            hubUrl = new URL("http://172.25.1.12:4444/wd/hub");
 
             if (DeviceAndroid || TestiniumEnvironment.isPlatformAndroid()) {
                 DesiredCapabilities overridden = new DesiredCapabilities();
